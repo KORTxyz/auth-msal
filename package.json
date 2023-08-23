@@ -1,8 +1,8 @@
 {
-  "name": "auth-msal",
-  "version": "0.0.1",
+  "name": "@kortxyz/auth-msal",
+  "version": "0.0.2",
   "description": "Fastify plugin for adding Microsoft Authentication Libary",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,8 @@
     "@fastify/session": "^10.4.0",
     "dotenv": "^16.3.1",
     "fastify": "^4.19.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -11,7 +11,7 @@ fastify.register(fastifySession, {
     expires: 1800000
 });
 
-fastify.register(require('../src/auth'), { prefix: 'auth' });
+fastify.register(require('../src'), { prefix: 'auth' });
 
 fastify.register(async (instance, opts, done) => {
     // authenticated routes
