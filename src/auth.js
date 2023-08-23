@@ -87,7 +87,6 @@ module.exports = async (instance, opts, done) => {
 
             // check if csrfToken matches
             if (state.csrfToken === req.session.csrfToken) {
-                console.log(!req.session.authCodeRequest)
                 req.session.authCodeRequest.code = req.body.code; // authZ code
                 req.session.authCodeRequest.codeVerifier = req.session.pkceCodes.verifier // PKCE Code Verifier
 
